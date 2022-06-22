@@ -1,0 +1,11 @@
+.navbar_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 1em;
+
+    background-color: #FDF0E9;
+    height: 10em;
+
+}

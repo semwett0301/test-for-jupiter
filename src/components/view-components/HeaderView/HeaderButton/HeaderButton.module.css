@@ -1,0 +1,26 @@
+.button_edging {
+    border: 0.15em solid rgb(255, 255, 255, 0.29);
+    border-radius: 0.4em;
+
+    height: 3em;
+    width: 10vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #28293E;
+}
+
+.button_text {
+    color: #ffffff;
+    font-size: 14pt;
+    font-family: "Epilogue-Regular";
+    letter-spacing: 2px;
+
+    user-select: none;
+}
+
+/*.button_text:hover {*/
+/*    text-decoration: underline;*/
+/*}*/

@@ -1,0 +1,11 @@
+.tile_wrapper {
+    position: relative;
+    max-width: 23.125em;
+
+}
+
+.tile_picture {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}

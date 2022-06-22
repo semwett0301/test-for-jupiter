@@ -1,0 +1,9 @@
+.tile_text {
+    color: #ffffff;
+    font-family: Epilogue-Medium;
+    font-size: 40pt;
+
+    position: absolute;
+    bottom: 0.7em;
+    left: 0.77em;
+}

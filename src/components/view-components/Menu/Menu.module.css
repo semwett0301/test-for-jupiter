@@ -1,0 +1,13 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5em;
+}
+
+.header_menu {
+    width: 40vw;
+}
+
+.main_menu {
+    width: 44em;
+}

@@ -1,0 +1,26 @@
+.button_wrapper {
+    font-size: 14pt;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffffff;
+
+    border-radius: 19pt;
+
+    position: absolute;
+    bottom: 6.5em;
+    left: 2.2em;
+
+    width: 6.5em;
+    height: 2.3em;
+
+    user-select: none;
+}
+
+.button_text {
+    font-family: Epilogue-Regular;
+    color: #391400;
+
+}
