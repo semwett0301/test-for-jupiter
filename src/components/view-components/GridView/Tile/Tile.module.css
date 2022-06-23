@@ -4,8 +4,8 @@
 
 }
 
-.tile_picture {
-    z-index: -1;
-    width: 100%;
-    height: 100%;
+
+.selected_tile svg{
+    outline: 10px solid #4FE24A;
+    border-radius: 6px;
 }
