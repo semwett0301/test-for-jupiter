@@ -2,13 +2,6 @@
     position: relative;
 }
 
-.header_text {
-    font-family: "Epilogue-Medium";
-    font-size: 16pt;
-    color: #ffffff;
-    user-select: none;
-}
-
 .main_text {
     font-family: Epilogue-Regular;
     font-size: 16pt;
@@ -26,9 +19,6 @@
     top: 110%;
 }
 
-.header_line {
-    background-color: #ffffff;
-}
 
 .main_line {
     background-color: rgb(57, 20, 0.64);

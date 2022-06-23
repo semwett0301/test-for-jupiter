@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from "./MenuText.module.css"
+import classes from "./NavbarMenuText.module.css"
 import {useDispatch, useSelector} from "react-redux";
 
 function showLine(e) {
@@ -24,19 +24,9 @@ function createClasses(state, value) {
     return {classLine, classText};
 }
 
-const MenuText = (props) => {
+const NavbarMenuText = (props) => {
     const dispatch = useDispatch()
     const tab = useSelector(state => state.tabs)
-
-    if (props.isHeader) {
-        return (
-            <div className={classes.text_wrapper} onMouseEnter={showLine} onMouseOut={hideLine}>
-                <span className={classes.header_text}>{props.children}</span>
-                <div className={classes.line + ' ' + classes.header_line}/>
-            </div>
-        )
-
-    }
 
     const changeTab = () =>  {
         if (props.children === "Show All") {
@@ -68,4 +58,4 @@ const MenuText = (props) => {
     )
 };
 
-export default MenuText;
+export default NavbarMenuText;
