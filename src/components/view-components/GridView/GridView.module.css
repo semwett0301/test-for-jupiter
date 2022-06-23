@@ -1,21 +1,31 @@
-.grid_wrapper {
-    max-width: 98.5em;
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(23.5em, 1fr));
-    grid-row-gap: 2em;
-    grid-column-gap: 1.5em;
+.main_wrapper {
+    background-color: #FDF0E9;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.main_wrapper {
-    justify-items: center;
-    display: grid;
-
-    background-color: #FDF0E9;
-
+.grid_wrapper {
+    margin: 0 auto;
+    max-width: 97.5em;
+    width: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
 }
 
 .selected_tile {
     border-radius: 2px;
     border: 5px solid #4FE24A;
+}
+
+@media (min-width: 1174px) and (max-width: 1556px) {
+    .grid_wrapper {
+        max-width: 73.2em;
+    }
+}
+
+@media (max-width: 1173px) {
+    .grid_wrapper {
+        max-width: 48.8em;
+    }
 }

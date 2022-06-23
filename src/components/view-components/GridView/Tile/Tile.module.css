@@ -1,7 +1,8 @@
 .tile_wrapper {
     position: relative;
-    max-width: 23.125em;
+    width: 23.125em;
 
+    margin: 10px;
 }
 
 

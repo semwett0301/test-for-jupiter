@@ -5,8 +5,9 @@ import classes from './TileDelButton.module.css'
 const TileDelButton = (props) => {
     const dispacher = useDispatch()
 
+    let showClass = ''
     if (props.select) {
-        document.getElementsByClassName(classes.del_button)[props.num - 1].classList.add(classes.shown_del_button)
+        showClass = classes.shown_del_button
     }
 
     const onClick = () => {
@@ -17,7 +18,7 @@ const TileDelButton = (props) => {
     }
 
     return (
-        <div className={classes.del_button} onClick={onClick}>
+        <div className={classes.del_button + ' ' + showClass} onClick={onClick}>
             {props.children}
         </div>
     );

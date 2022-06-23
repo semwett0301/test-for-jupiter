@@ -4,7 +4,6 @@ import {useSelector} from "react-redux";
 
 const Grid = () => {
     const tiles = useSelector(state => state.tile.tiles)
-    console.log(tiles)
     return (
         <GridView tiles={tiles}/>
     );

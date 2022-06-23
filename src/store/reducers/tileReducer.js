@@ -22,7 +22,7 @@ export const tileReducer = (state = defaultTiles, action) => {
             defaultTiles.allTiles.forEach(
                 elem => {
                     let newElem = Object.assign({}, elem)
-                    newElem.key += state.allTiles.length
+                    newElem.key += state.allTiles[state.allTiles.length - 1].key
                     extraTiles.push(newElem)
                 }
             )

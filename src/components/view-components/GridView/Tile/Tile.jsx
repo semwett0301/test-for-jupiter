@@ -2,7 +2,7 @@ import React from 'react';
 import TileButton from "./TileButton/TileButton";
 import TileText from "./TileText/TileText";
 import classes from './Tile.module.css'
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import TileDelButton from "./TileDelButton/TileDelButton";
 
 const Tile = (props) => {

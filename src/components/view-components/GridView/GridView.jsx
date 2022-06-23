@@ -1,7 +1,7 @@
 import React from 'react';
 import Tile from "./Tile/Tile";
 import classes from './GridView.module.css'
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 
 const GridView = (props) => {
     const select = useSelector(state => state.select)
