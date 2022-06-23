@@ -1,15 +1,14 @@
 import React from 'react';
-import {useState} from "react";
 import NavbarView from "../../../view-components/NavbarView/NavbarView";
-import initial_state from "../initial_state";
+import {defaultTabs} from "../../../../store/utils/defaultTabs";
 
 const Navbar = () => {
-    let id = 0
-
-    const menu = initial_state.map(
+    const menu = defaultTabs.map(
         elem => {
-            id++;
-            return {id: id, text: elem}
+            return {
+                id: elem.id,
+                text: elem.text
+            }
         }
     )
     return (

@@ -1,0 +1,19 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14pt;
+    font-family: Epilogue-Light, sans-serif;
+    color: #391400;
+
+    background-color: #ffffff;
+
+    border-radius: 7px;
+
+    height: 3em;
+    width: 15vw;
+    user-select: none;
+
+    box-shadow: 0.02em 0.02em 0.03em 0.03em  rgba(122,122,122,0.2);
+}

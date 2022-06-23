@@ -14,3 +14,8 @@
     background-color: #FDF0E9;
 
 }
+
+.selected_tile {
+    border-radius: 2px;
+    border: 5px solid #4FE24A;
+}

@@ -1,6 +1,6 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import classes from "./MenuText.module.css"
-import {Context} from "../../../functional-components/Main/context";
+import {useDispatch, useSelector} from "react-redux";
 
 function showLine(e) {
     e.target.parentNode.lastChild.style.display = "block"
@@ -13,8 +13,7 @@ function hideLine(e) {
 function createClasses(state, value) {
     let classLine;
     let classText;
-    if (state.includes(value) && (state.length === 1
-        || value === "Show All")){
+    if (state === value ){
         classLine = classes.line + ' ' + classes.main_line + ' ' + classes.chose_line;
         classText = classes.main_text + ' ' + classes.chose_main_text
     } else {
@@ -26,7 +25,8 @@ function createClasses(state, value) {
 }
 
 const MenuText = (props) => {
-    const reducer = useContext(Context)
+    const dispatch = useDispatch()
+    const tab = useSelector(state => state.tabs)
 
     if (props.isHeader) {
         return (
@@ -38,25 +38,28 @@ const MenuText = (props) => {
 
     }
 
-    const changeTopic = () =>  {
+    const changeTab = () =>  {
         if (props.children === "Show All") {
-            reducer.dispatch({
+            dispatch({
                 type: "recover"
             })
         } else {
-            reducer.dispatch({
+            dispatch({
                 type: "replace",
-                value: props.children
+                payload: props.children
             })
         }
+
+        dispatch({
+            type: "changeTab",
+            payload: props.children
+        })
     }
 
-    const {classLine, classText} = createClasses(reducer.state, props.children)
-
-
+    const {classLine, classText} = createClasses(tab, props.children)
 
     return (
-        <div className={classes.text_wrapper} onMouseEnter={showLine} onMouseOut={hideLine} onClick={changeTopic}>
+        <div className={classes.text_wrapper} onMouseEnter={showLine} onMouseOut={hideLine} onClick={changeTab}>
             <span className={classText}>
                 {props.children}
             </span>

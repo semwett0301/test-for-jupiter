@@ -1,25 +1,25 @@
 import React, {useContext} from 'react';
 import classes from './TileButton.module.css'
-import {Context} from "../../../../functional-components/Main/context";
+import {useDispatch} from "react-redux";
 
 const TileButton = (props) => {
-    const reducer = useContext(Context)
+    const dispatch = useDispatch()
 
-    const changeTopic = () =>  {
-        if (props.children === "Show All") {
-            reducer.dispatch({
-                type: "recover"
-            })
-        } else {
-            reducer.dispatch({
-                type: "replace",
-                value: props.placeholder
-            })
-        }
+    const changeTab = () => {
+        dispatch({
+            type: "replace",
+            payload: props.placeholder
+        })
+        dispatch({
+            type: "changeTab",
+            payload: props.placeholder
+        })
+
+
     }
 
     return (
-        <div className={classes.button_wrapper} onClick={changeTopic}>
+        <div className={classes.button} onClick={changeTab}>
             <span className={classes.button_text}>
                 {props.placeholder}
             </span>
