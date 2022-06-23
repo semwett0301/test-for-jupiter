@@ -3,6 +3,7 @@ import TileButton from "./TileButton/TileButton";
 import TileText from "./TileText/TileText";
 import classes from './Tile.module.css'
 import {useDispatch, useSelector} from "react-redux";
+import TileDelButton from "./TileDelButton/TileDelButton";
 
 const Tile = (props) => {
     const dispatch = useDispatch()
@@ -26,12 +27,13 @@ const Tile = (props) => {
     }
 
     return (
-        <div className={classes.tile_wrapper } onClick={onClickTile}>
+        <div className={classes.tile_wrapper} onClick={onClickTile}>
             <div className={classSelected}>
                 {props.background}
             </div>
             <TileButton placeholder={props.placeholder}/>
             <TileText>{props.text}</TileText>
+            <TileDelButton num={props.num} select={props.select}>DEL</TileDelButton>
         </div>
     );
 };

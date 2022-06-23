@@ -5,7 +5,8 @@ import {useDispatch} from "react-redux";
 const TileButton = (props) => {
     const dispatch = useDispatch()
 
-    const changeTab = () => {
+    const changeTab = (e) => {
+        e.stopPropagation()
         dispatch({
             type: "replace",
             payload: props.placeholder

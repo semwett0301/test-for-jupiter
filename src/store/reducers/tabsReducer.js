@@ -1,5 +1,3 @@
-import React from "react";
-
 const CHANGE_TAB = "changeTab"
 const RETURN_TO_ALL = "returnToAll"
 

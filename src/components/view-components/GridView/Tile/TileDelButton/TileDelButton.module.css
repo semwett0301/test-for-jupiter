@@ -1,0 +1,25 @@
+.del_button {
+    background-color: #ffffff;
+    border-radius: 15px;
+
+    width: 4.5em;
+    height: 2.1em;
+
+    position: absolute;
+    top: 1em;
+    right: 0.8em;
+
+    justify-content: center;
+    align-items: center;
+
+    color: #1f1f2f;
+    font-family: Epilogue-Bold, serif;
+
+    user-select: none;
+
+    display: none;
+}
+
+.shown_del_button {
+    display: flex;
+}

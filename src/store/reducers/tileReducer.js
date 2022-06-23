@@ -1,4 +1,3 @@
-import React from "react";
 import {defaultTiles} from "../utils/defaultTiles";
 
 
@@ -34,6 +33,12 @@ export const tileReducer = (state = defaultTiles, action) => {
                 allTiles: state.allTiles.concat(extraTiles)
             }
 
+        case "remove":
+            return {
+                ...state,
+                tiles: state.tiles.filter(elem => elem.key !== action.payload),
+                allTiles: state.allTiles.filter(elem => elem.key !== action.payload),
+            }
         default:
             return state
     }
