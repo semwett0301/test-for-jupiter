@@ -6,6 +6,8 @@ import {useSelector} from "react-redux";
 const GridView = (props) => {
     const select = useSelector(state => state.select)
 
+
+
     return (
         <div className={classes.main_wrapper}>
             <div className={classes.grid_wrapper}>

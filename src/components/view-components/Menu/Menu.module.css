@@ -11,3 +11,9 @@
 .main_menu {
     width: 44em;
 }
+
+@media (max-width: 1040px) {
+    .menu {
+        display: none;
+    }
+}

@@ -1,0 +1,15 @@
+.representing_header {
+    font-family: Epilogue-ExtraBold, serif;
+    font-size: 56pt;
+    color: #ffffff;
+
+
+    display: none;
+    justify-content: center;
+}
+
+@media (max-width: 1040px) {
+    .representing_header {
+        display: flex;
+    }
+}

@@ -3,9 +3,9 @@ import classes from './Represeting.module.css'
 
 const RepresentingText = (props) => {
     return (
-        <div className={classes.text}>
+        <span className={classes.text}>
             {props.children}
-        </div>
+        </span>
     );
 };
 

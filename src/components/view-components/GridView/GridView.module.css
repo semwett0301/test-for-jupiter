@@ -29,3 +29,9 @@
         max-width: 48.8em;
     }
 }
+
+@media (max-width: 1040px) {
+    .grid_wrapper {
+        max-width: 24.4em;
+    }
+}

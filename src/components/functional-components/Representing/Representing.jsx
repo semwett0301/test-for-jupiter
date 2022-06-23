@@ -1,15 +1,15 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import RepresentingView from "../../view-components/RepresentingView/RepresentingView";
 
 const Representing = () => {
-    const [rows] = useState([
-        {text: "Agency provides a full service range including technical skills, design, business", id: 1},
-        {text: "understanding.", id: 2}
-    ])
+
+    const text = "Agency provides a full service range including technical skills, design, business understanding."
+
+    let header = "Portfolio"
 
     return (
         <div>
-            <RepresentingView rows={rows}/>
+            <RepresentingView header={header} text={text}/>
         </div>
     );
 };

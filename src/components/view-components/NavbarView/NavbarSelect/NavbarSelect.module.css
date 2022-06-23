@@ -1,0 +1,5 @@
+@media (min-width: 1040px) {
+    .navbar_select {
+        display: none;
+    }
+}

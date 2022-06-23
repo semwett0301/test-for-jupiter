@@ -21,6 +21,8 @@
     user-select: none;
 }
 
-/*.button_text:hover {*/
-/*    text-decoration: underline;*/
-/*}*/
+@media (max-width: 1040px) {
+    .button_edging {
+        display: none;
+    }
+}
