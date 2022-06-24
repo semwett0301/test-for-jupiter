@@ -7,3 +7,9 @@
 .header_menu {
     width: 40vw;
 }
+
+@media (max-width: 1040px) {
+    .menu {
+        display: none;
+    }
+}

@@ -13,8 +13,9 @@
 
 @media (max-width: 1040px) {
     .text {
-        min-width: 10em;
-        max-width: 21em;
+        max-width: 60%;
         margin: 0;
+
+        margin-top: 2em;
     }
 }
