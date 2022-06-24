@@ -7,3 +7,30 @@
     bottom: 0.7em;
     left: 0.77em;
 }
+
+@media (max-width: 1040px) {
+    .tile_text {
+        justify-content: center;
+        bottom: 10%;
+        left: 7%;
+    }
+}
+
+@media (max-width: 500px) {
+    .tile_text {
+        font-size: 32pt;
+    }
+}
+
+@media (max-width: 390px) {
+    .tile_text {
+        font-size: 24pt;
+    }
+}
+
+@media (max-width: 325px) {
+    .tile_text {
+
+        font-size: 16pt;
+    }
+}

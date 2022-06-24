@@ -30,7 +30,7 @@ export default function NavbarSelect(props) {
 
     return (
         <div className={classes.navbar_select}>
-            <FormControl sx={{minWidth: 370, borderWidth: 2, borderColor: '#EF6D58'}}>
+            <FormControl sx={{width: "70vw", borderWidth: 2, borderColor: '#EF6D58'}}>
                 <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"

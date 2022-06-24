@@ -13,3 +13,9 @@
         display: flex;
     }
 }
+
+@media (max-width: 450px) {
+    .representing_header {
+        font-size: 40pt;
+    }
+}

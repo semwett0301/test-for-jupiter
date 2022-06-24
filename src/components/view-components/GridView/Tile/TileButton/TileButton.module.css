@@ -1,5 +1,4 @@
 .button {
-    font-size: 14pt;
 
     display: flex;
     align-items: center;
@@ -22,5 +21,39 @@
 .button_text {
     font-family: Epilogue-Regular;
     color: #391400;
-
 }
+
+@media (max-width: 1040px) {
+    .button {
+        bottom: 25%;
+        left: 7%;
+
+        width: 50%;
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    .button {
+        bottom: 28%;
+        width: 40%;
+        font-size: 10pt;
+    }
+}
+
+@media (max-width: 375px) {
+    .button {
+        bottom: 28%;
+        width: 40%;
+        font-size: 10pt;
+    }
+}
+
+@media (max-width: 325px) {
+    .button {
+        bottom: 25%;
+        width: 40%;
+        font-size: 10pt;
+    }
+}
+
