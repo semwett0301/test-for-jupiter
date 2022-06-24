@@ -1,5 +1,5 @@
 import React from 'react';
-import GridView from "../../../view-components/GridView/GridView";
+import GridView from "../../view-components/GridView/GridView";
 import {useSelector} from "react-redux";
 
 const Grid = () => {

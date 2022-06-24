@@ -12,8 +12,14 @@
     border-radius: 7px;
 
     height: 3em;
-    width: 60%;
+    width: 15vw;
     user-select: none;
 
-    box-shadow: 0.02em 0.02em 0.03em 0.03em  rgba(122,122,122,0.2);
+    box-shadow: 0.02em 0.02em 0.03em 0.03em rgba(122, 122, 122, 0.2);
+}
+
+@media (max-width: 1040px) {
+    .button {
+        width: 60% ;
+    }
 }

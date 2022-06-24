@@ -1,7 +1,10 @@
 import "./styles/app-styles.css";
 import Header from "./components/functional-components/Header/Header";
 import Representing from "./components/functional-components/Representing/Representing";
-import Main from "./components/functional-components/Main/Main";
+import Navbar from "./components/functional-components/Navbar/Navbar";
+import Grid from "./components/functional-components/Grid/Grid";
+import Loader from "./components/functional-components/Loader/Loader";
+import React from "react";
 
 
 
@@ -10,7 +13,9 @@ function App() {
         <div id={"main-element"}>
             <Header/>
             <Representing/>
-            <Main/>
+            <Navbar/>
+            <Grid/>
+            <Loader/>
         </div>
     );
 }

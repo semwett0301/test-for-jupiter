@@ -1,6 +1,6 @@
 import React from 'react';
-import NavbarView from "../../../view-components/NavbarView/NavbarView";
-import {defaultTabs} from "../../../../store/utils/defaultTabs";
+import NavbarView from "../../view-components/NavbarView/NavbarView";
+import {defaultTabs} from "../../../store/utils/defaultTabs";
 
 const Navbar = () => {
     const menu = defaultTabs.map(
